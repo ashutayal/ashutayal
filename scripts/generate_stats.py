@@ -80,6 +80,8 @@ def collect(login, token):
     user = gql(USER_QUERY, {"login": login}, token)["user"]
     repos = user["repositories"]["nodes"]
 
+    # Weight languages by how many projects use them. Byte counts are badly
+    # skewed by notebook outputs and vendored libraries.
     langs = {}
     for repo in repos:
         for edge in repo["languages"]["edges"]:
@@ -87,7 +89,7 @@ def collect(login, token):
             if name in IGNORED_LANGS:
                 continue
             entry = langs.setdefault(name, {"size": 0, "color": edge["node"]["color"] or MUTED})
-            entry["size"] += edge["size"]
+            entry["size"] += 1
 
     commits = 0
     days = {}
@@ -152,8 +154,6 @@ def card(width, height, title, body):
     .l {{ font: 400 14px {FONT}; fill: {TEXT}; }}
     .v {{ font: 700 14px {FONT}; fill: #ffffff; }}
     .m {{ font: 400 12px {FONT}; fill: {MUTED}; }}
-    .row {{ opacity: 0; animation: in .5s ease-out forwards; }}
-    @keyframes in {{ from {{ opacity: 0; transform: translateX(-6px); }} to {{ opacity: 1; transform: none; }} }}
   </style>
   <rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="10" fill="{BG}" stroke="{BORDER}"/>
   <text x="25" y="38" class="t">{escape(title)}</text>
@@ -164,23 +164,22 @@ def card(width, height, title, body):
 
 def stats_svg(s):
     rows = [
-        ("star", "Total stars", fmt(s["stars"])),
         ("commit", "Total commits", fmt(s["commits"])),
+        ("calendar", "Total contributions", fmt(s["contributions"])),
         ("repo", "Public repositories", fmt(s["repos"])),
-        ("calendar", "Contributions", fmt(s["contributions"])),
-        ("flame", "Longest streak", f'{s["longest_streak"]} days'),
+        ("flame", "Active days", fmt(s["active_days"])),
     ]
     body = []
     for i, (icon, label, value) in enumerate(rows):
         y = 70 + i * 26
         body.append(
-            f'  <g class="row" style="animation-delay:{150 + i * 120}ms">'
+            '  <g>'
             f'<path transform="translate(25,{y - 13})" fill="{TITLE}" d="{ICONS[icon]}"/>'
             f'<text x="52" y="{y}" class="l">{label}</text>'
             f'<text x="300" y="{y}" class="v" text-anchor="end">{value}</text></g>'
         )
-    body.append(f'  <text x="25" y="{70 + len(rows) * 26 + 4}" class="m">On GitHub since {s["since"]}</text>')
-    return card(330, 225, "GitHub Stats", "\n".join(body))
+    body.append(f'  <text x="25" y="{70 + len(rows) * 26 + 6}" class="m">On GitHub since {s["since"]}</text>')
+    return card(330, 200, "GitHub Stats", "\n".join(body))
 
 
 def langs_svg(s, top=6):
@@ -196,15 +195,15 @@ def langs_svg(s, top=6):
     body.append("  </g>")
     for i, (name, v) in enumerate(langs):
         col, row = i % 2, i // 2
-        cx, cy = 25 + col * 145, 92 + row * 26
-        pct = 100 * v["size"] / total
+        cx, cy = 25 + col * 145, 92 + row * 36
+        label = f'{v["size"]} project' + ("s" if v["size"] != 1 else "")
         body.append(
-            f'  <g class="row" style="animation-delay:{150 + i * 100}ms">'
+            '  <g>'
             f'<circle cx="{cx + 5}" cy="{cy - 4}" r="5" fill="{v["color"]}"/>'
             f'<text x="{cx + 16}" y="{cy}" class="l">{escape(name)}</text>'
-            f'<text x="{cx + 16 + len(name) * 7.6 + 6:.0f}" y="{cy}" class="m">{pct:.1f}%</text></g>'
+            f'<text x="{cx + 16}" y="{cy + 16}" class="m">{label}</text></g>'
         )
-    return card(330, 225, "Most Used Languages", "\n".join(body))
+    return card(330, 200, "Languages by Project", "\n".join(body))
 
 
 def main():

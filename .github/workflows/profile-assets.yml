@@ -1,6 +1,6 @@
 name: Build profile assets
 
-# Regenerates the stats cards and contribution snake used by README.md and
+# Regenerates the stats cards used by README.md and
 # publishes them to the `output` branch. Everything is self-hosted, so the
 # profile does not depend on third-party image services.
 on:
@@ -27,14 +27,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/generate_stats.py "${{ github.repository_owner }}" dist
-
-      - name: Generate contribution snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#38bdf8&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
 
       - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v4

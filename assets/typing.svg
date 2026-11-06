@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="40" viewBox="0 0 640 40" role="img" aria-label="Turning messy data into clear decisions / Machine learning • deep learning • analytics / Interactive data visualization with D3.js / Based in Chicago, IL">
-<style>text{font:500 20px ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;fill:#38bdf8}</style>
+<style>text{font:500 20px ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;fill:#1d9bf0}</style>
 <clipPath id="c0"><rect x="86.0" y="0" height="40" width="0"><animate attributeName="width" dur="16.0s" repeatCount="indefinite" keyTimes="0;0.1000;0.2188;0.2469;1" values="0;468.0;468.0;0;0" calcMode="linear"/></rect></clipPath>
 <text x="86.0" y="27" clip-path="url(#c0)">Turning messy data into clear decisions</text>
 <clipPath id="c1"><rect x="56.0" y="0" height="40" width="0"><animate attributeName="width" dur="16.0s" repeatCount="indefinite" keyTimes="0;0.2500;0.3500;0.4688;0.4969;1" values="0;0;528.0;528.0;0;0" calcMode="linear"/></rect></clipPath>
