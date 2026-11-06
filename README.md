@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/typing.svg" alt="Turning messy data into clear decisions" width="640"/>
+  <img src="assets/tagline.svg" alt="Turning messy data into clear decisions" width="640"/>
 </p>
 
 <p align="center">

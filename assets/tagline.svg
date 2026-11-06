@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="40" viewBox="0 0 640 40" role="img" aria-label="Turning messy data into clear decisions">
+  <style>
+    text { font: 500 20px ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; fill: #1d9bf0; }
+    .cursor { animation: blink 1.1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+  <text x="320" y="27" text-anchor="middle">Turning messy data into clear decisions<tspan class="cursor" font-weight="700">_</tspan></text>
+</svg>
