@@ -43,6 +43,11 @@ currently: building things with data — and making them easy to understand
   <img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white"/>
   <img src="https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white"/>
   <br/>
+  <img src="https://img.shields.io/badge/XGBoost-337AB7?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/statsmodels-4051B5?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GeoPandas-139C5A?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white"/>
   <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white"/>
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
 </p>
@@ -52,32 +57,34 @@ currently: building things with data — and making them easy to understand
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h4>🏛️ <a href="https://github.com/ashutayal/CCSAO-sentencing">CCSAO Sentencing</a></h4>
-      Analysis of Cook County State's Attorney sentencing data — exploring patterns and disparities in criminal sentencing outcomes.
+      <h4>🦠 <a href="https://github.com/ashutayal/DV_Final">Tracking India's Coronavirus</a></h4>
+      Interactive D3.js dashboard of COVID-19 cases across Indian states — choropleth map with cumulative and daily trends.<br/>
+      <a href="https://ashutayal.github.io/DV_Final/"><b>▶ Live demo</b></a>
     </td>
+    <td width="50%" valign="top">
+      <h4>🏛️ <a href="https://github.com/ashutayal/CCSAO-sentencing">Racial Bias in CCSAO Charging</a></h4>
+      How race shapes charges and case outcomes in Cook County State's Attorney data (2015–2019), with regression analysis and GeoPandas maps.
+    </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h4>🏠 <a href="https://github.com/ashutayal/House-Price-Prediction">House Price Prediction</a></h4>
-      Regression models and feature engineering to predict residential home prices.
+      Kaggle regression with feature engineering and a stacked XGBoost / LightGBM / scikit-learn ensemble — <b>#283 on the leaderboard</b> (RMSLE 0.1290).
+    </td>
+    <td width="50%" valign="top">
+      <h4>🫁 <a href="https://github.com/ashutayal/UCM_RHA_FAN">Asthma Education Program Evaluation</a></h4>
+      Pre/post survey analysis for UChicago Medicine &amp; Respiratory Health Association using paired t-tests and McNemar's test.
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h4>📊 <a href="https://github.com/ashutayal/DV_Final">Data Visualization Final</a></h4>
-      Interactive, web-based data storytelling project built with JavaScript visualization tooling.
+      <h4>🍷 <a href="https://github.com/ashutayal/Advanced-Data-Science-Capstone">Wine Quality Prediction</a></h4>
+      IBM Advanced Data Science capstone — logistic regression, random forests and a Keras neural network, plus PySpark ML.
     </td>
     <td width="50%" valign="top">
-      <h4>🧠 <a href="https://github.com/ashutayal/Neural-Networks-and-Deep-Learning">Neural Networks &amp; Deep Learning</a></h4>
-      Building neural networks from the ground up — forward/backprop, optimization, and deep architectures.
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>⚡ <a href="https://github.com/ashutayal/Fundamentals-of-Scalable-Data-Science">Scalable Data Science</a></h4>
-      Distributed data processing and ML with Apache Spark.
-    </td>
-    <td width="50%" valign="top">
-      <h4>♟️ <a href="https://github.com/leppekja/chess-mml">Chess MML</a></h4>
-      Collaborative machine learning project on chess game data.
+      <h4>🗺️ <a href="https://github.com/ashutayal/DVHW8">U.S. Vaccination Map</a></h4>
+      County-level D3.js choropleth of COVID-19 vaccination rates, recreating a New York Times graphic.<br/>
+      <a href="https://ashutayal.github.io/DVHW8/"><b>▶ Live demo</b></a>
     </td>
   </tr>
 </table>
