@@ -32,14 +32,12 @@ currently: building things with data — and making them easy to understand
   <img src="assets/badges/sql.svg" alt="SQL"/>
   <img src="assets/badges/javascript.svg" alt="JavaScript"/>
   <img src="assets/badges/d3.svg" alt="D3.js"/>
-  <br/>
   <img src="assets/badges/pandas.svg" alt="pandas"/>
   <img src="assets/badges/numpy.svg" alt="NumPy"/>
   <img src="assets/badges/scikit-learn.svg" alt="scikit-learn"/>
   <img src="assets/badges/tensorflow.svg" alt="TensorFlow"/>
   <img src="assets/badges/keras.svg" alt="Keras"/>
   <img src="assets/badges/spark.svg" alt="Apache Spark"/>
-  <br/>
   <img src="assets/badges/xgboost.svg" alt="XGBoost"/>
   <img src="assets/badges/statsmodels.svg" alt="statsmodels"/>
   <img src="assets/badges/geopandas.svg" alt="GeoPandas"/>

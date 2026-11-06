@@ -14,7 +14,7 @@
   <style>
     .name { font: 700 64px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #ffffff; letter-spacing: -1px; }
     .sub  { font: 500 20px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #cbd5e1; letter-spacing: 2px; }
-    .fade { opacity: 0; animation: fade 1.2s ease-out forwards; }
+    .fade { animation: fade 1.2s ease-out both; }
     .d2 { animation-delay: .35s; }
     @keyframes fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
     .w1 { animation: drift 14s ease-in-out infinite alternate; }
