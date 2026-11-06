@@ -106,8 +106,7 @@ currently: building things with data — and making them easy to understand
 
 <p>
   <a href="mailto:ashutayal@hotmail.com"><img src="https://img.shields.io/badge/Email-0f172a?style=for-the-badge&logo=microsoftoutlook&logoColor=38bdf8"/></a>
-  <!-- Replace YOUR-LINKEDIN with your LinkedIn handle -->
-  <a href="https://www.linkedin.com/in/YOUR-LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0f172a?style=for-the-badge&logo=linkedin&logoColor=38bdf8"/></a>
+  <a href="https://www.linkedin.com/in/ashutayal"><img src="https://img.shields.io/badge/LinkedIn-0f172a?style=for-the-badge&logo=linkedin&logoColor=38bdf8"/></a>
   <a href="https://github.com/ashutayal"><img src="https://img.shields.io/badge/GitHub-0f172a?style=for-the-badge&logo=github&logoColor=38bdf8"/></a>
 </p>
 
