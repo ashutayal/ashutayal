@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="330" height="200" viewBox="0 0 330 200" role="img" aria-label="Languages by Project">
+  <style>
+    .t { font: 600 18px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #38bdf8; }
+    .l { font: 400 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #c9d1d9; }
+    .v { font: 700 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #ffffff; }
+    .m { font: 400 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #8b949e; }
+  </style>
+  <rect x="0.5" y="0.5" width="329" height="199" rx="10" fill="#0d1117" stroke="#30363d"/>
+  <text x="25" y="38" class="t">Languages by Project</text>
+  <mask id="bar"><rect x="25" y="55" width="280" height="8" rx="4" fill="#fff"/></mask>
+  <g mask="url(#bar)">
+    <rect x="25.00" y="55" width="109.39" height="8" fill="#DA5B0B"/>
+    <rect x="133.89" y="55" width="93.83" height="8" fill="#e34c26"/>
+    <rect x="227.22" y="55" width="62.72" height="8" fill="#3572A5"/>
+    <rect x="289.44" y="55" width="16.06" height="8" fill="#e16737"/>
+  </g>
+  <g><circle cx="30" cy="88" r="5" fill="#DA5B0B"/><text x="41" y="92" class="l">Jupyter Notebook</text><text x="41" y="108" class="m">7 projects</text></g>
+  <g><circle cx="175" cy="88" r="5" fill="#e34c26"/><text x="186" y="92" class="l">HTML</text><text x="186" y="108" class="m">6 projects</text></g>
+  <g><circle cx="30" cy="124" r="5" fill="#3572A5"/><text x="41" y="128" class="l">Python</text><text x="41" y="144" class="m">4 projects</text></g>
+  <g><circle cx="175" cy="124" r="5" fill="#e16737"/><text x="186" y="128" class="l">MATLAB</text><text x="186" y="144" class="m">1 project</text></g>
+</svg>
